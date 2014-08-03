@@ -1,0 +1,143 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	
+	<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="pdocument.css">
+	<link rel="stylesheet" type="text/css" href="documentazione.css">
+	<link href='http://fonts.googleapis.com/css?family=Forum|Vollkorn' rel='stylesheet' type='text/css'>
+	<title>Documentazione Tecnica</title>
+
+</head>
+
+
+<body>
+<h2 id="titind">INDICE</h2>
+<a href="http://vitali.web.cs.unibo.it/TechWeb12/GruppoLTW03"><span id="omega">OMEGA-TWG</span></a>
+<a href="http://vitali.web.cs.unibo.it/TechWeb12/GruppoLTW03"><img id="immagine" src="http://img191.imageshack.us/img191/6118/logoomega.gif"></a>
+
+<div class="indice">
+<ol>
+
+<li><a href="#html1">Presentazione</a></li>
+<li><a href="#html2">Finalità del documento</a></li>
+<li><a href="#html3">Finalità del prodotto</a></li>
+<li><a href="#html4">Caratteristiche Utenti</a></li>
+<li><a href="#html5">Database (Dati, Metadati e Formati)</a></li>
+	<ol>
+	<li><a href="#html5.1">Dati</a></li>
+	<li><a href="#html5.2">Metadati</a></li></a>
+	<li><a href="#html5.3">Formati accettati</a></li>
+	</ol>
+<li><a href="#html6">Descrittori Implementati</a></li>
+	<ol>
+	<li><a href="#html6.1">É aperto</a></li>
+	<li><a href="#html6.2">Aprirá</a></li>
+	<li><a href="#html6.3">Tipologia</a></li>
+	<li><a href="#html6.4">Cosa faccio oggi?</a></li>
+	<li><a href="#html6.5">Descrizione</a></li>
+	<li><a href="#html6.6">Distanza</a></li>
+	</ol>
+<li><a href="#html7">Come si usa?</a></li>
+	<ol>
+	<li><a href="#html7.1">Filtrare</a></li>
+	<li><a href="#html7.2">Ottenere informazioni</a></li>
+	<li><a href="#html7.3">Organizza la tua giornata</a></li>
+	</ol>
+</div>
+<h2 id="bigdoc">Clicca <a href="http://ltw1140.web.cs.unibo.it/documentazione.html" target=" blank">QUI</a> per aprire la documentazione su un'altra pagina</h2>
+
+
+
+	<h1 id="titprog">PROGETTO METAMARKET</h1>
+<div class="pmeta">
+
+<h2><a name="html1">1-Presentazione</a></h2>
+<p>Il protocollo si compone in realtà di due protocolli diversi: Descrittore-Aggregatore (DA) e Narratore-Descrittore (ND). L’architettura Meta Market 	prevede infatti tre componenti principali: aggregatori (per rispondere a richieste inerentemente ai dati crudi da essi gestiti), descrittori (per l'elaborazione sofisticata dei dati forniti dagli aggregatori) e narratori per la presentazione dei dati ricevuti dai descrittori. Ogni narratore comunica coi descrittori tramite il protocollo ND, mentre ogni descrittore comunica con gli aggregatori tramite il protocollo DA.</p>
+
+<h2><a name="html2">2-Finalità del documento</a></h2>
+<p>Questo documento è fornito per dare una descrizione completa delle capacità essenziali del sistema software realizzato. I destinatari sono l'utente e il progettista del sistema.</p>
+
+<h2><a name="html3">3-Finalità del prodotto</a></h2>
+<p>Questo protocollo nasce all’interno del progetto Meta Market del corso di Tecnologie Web 2011/2012. L'obiettivo del progetto è di un motore per la creazione di rappresentazioni visuali e comprensibili di collezioni di dati numerici.</p>
+
+<h2><a name="html4">4-Caratteristiche Utenti</a></h2>
+L’utenza principale del sistema software è rappresentata da studenti e cittadini prevalentemente di Bologna, poiché i dati raccolti si riferiscono prevalentemente al capoluogo Emiliano. Gli utenti pertanto possono avere una buonacapacità di utilizzo del calcolatore, anche se non richiesta, in quanto al sistema si accede mediante un´interfaccia, quindi l’interazione avviene usando un comune browserweb come client. Si suppone che il sistema possa essere utilizzato anche da più utenti contemporaneamente.
+
+<h2><a name="html5">5-Database (Dati, Metadati e Formati)</a></h2>
+
+<dl>
+	<h3><dt><a name="html5.1">5.1-Dati</a></dt></h3>
+		<dd>Tutti i dati sono codificati secondo lo standard Unicode UTF-8. I dati da gestire riguardano luoghi (fisici o virtuali), sono geolocalizzabili 			e hanno degli orari di apertura e di chiusura. I campi che vengono gestiti sono:
+
+		Identificativo. Un valore univoco che identifichi il locale.
+		Categoria. Un campo che indica di che tipo è il locale (es., luogo pubblico, farmacia, biblioteca, ecc.). Un locale può avere associata più di una 			categoria.
+		Nome. Il nome del locale.
+		Latitudine. La latitudine in cui si trova il locale.
+		Longitudine. La longitudine in cui si trova il locale.
+		Indirizzo. L'indirizzo in cui si trova il locale. All'interno della stringa possono comparire elementi come Via, CAP, Citta' ecc. separati da 			virgola.
+		Orari. Gli orari di apertura e/o di chiusura, sia generali sia straordinari.</dd>
+
+	<h3><dt><a name="html5.2">5.2-Metadati</a></dt></h3>
+		<dd>Contengono le informazioni sui vari documenti in cui sono salvati i dati: come quelle riguardanti la freschezza, la versione, l'intervallo di 			validità e le informazioni per il riaccesso ai dati aggiornati. In particolare, le voci sono:
+
+		Autore. Chi ha creato originariamente il documento con i dati.
+		Data di creazione. Quando è stato creato il documento.
+		Versione. La versione corrente del documento.
+		Sorgente. Una o più sorgenti da cui sono stati estrapolati i dati di questo documento.
+		Validità. Un momento temporale in cui i dati cessano di essere considerati validi, attendibili e/o autoritativi.</dd>
+
+	<h3><dt><a name="html5.3">5.3-Formati accettati</a></dt></h3>
+		<dd>Dati e Metadati possono essere espressi in quattro diversi formati, che rispettino le specifiche sopra: Comma-Separated Values (CSV), JSON, XML 		e Turtle.</dd>
+</dl>
+
+	<h2><a name="html6">6-Descrittori Implementati</a></h2>
+<dl>
+	<h3><dt><a name="html6.1">6.1-É aperto </a></dt></h3>
+	<dd> Descrittore che prende in input un multiintervallo di orari (ad es.: lun,mar,mer: 10:00-13:00, 15:30-20:00. gio,ven,sab: 10:00-12:30, 16:30-20:00.) e un intervallo semplice (es.: mar: 9:30-11:00) e verifica se la posizione del secondo orario nel primo è parzialmente interna (aperto - vero) o no (chiuso - falso)</dd>
+
+	<h3><dt><a name="html6.2">6.2-Aprirá </a></dt></h3>
+	<dd> Descrittore che prende in input un multiintervallo di orari (ad es.: mon, tue: 1200-1600, 1400-1900. | 2012-06-12, 2012-09-23: 1900-2300.) e un intervallo semplice (es.: mon, tue: 1200-1600, 1400-1900. | 2012-06-12, 2012-09-23: 1900-2300.), e verifica se la posizione del secondo orario nel primo è interna (sempre aperto - verde), sovrapposto a sinistra (chiuso adesso, ma aprirà - rosso/arancione), sovrapposto a destra (aperto adesso, ma chiuderà - arancione/verde), esterna (sempre chiuso - rosso) oppure se l´intervallo dato é tra una chiusura e una riapertura (giallo). </dd>
+
+	<h3><dt><a name="html6.3">6.3-Tipologia </a></dt></h3>
+	<dd> Descrittore che prende in input un operatore booleano – a scelta tra NOT, AND, OR e XOR – e una o più tipologie CATEGORY_1, CATEGORY_2, ..., CATEGORY_N e restituisce tutti i luoghi che (AND) hanno tutte le tipologie specificate, (NOT) nessuna delle tipologie specificate, (OR) almeno una delle tipologie specificate, (XOR) soltanto una delle tipologie specificate </dd>
+
+	<h3><dt><a name="html6.4">6.4-Cosa faccio oggi?</a> <a href="http://vitali.web.cs.unibo.it/TechWeb12/GruppoLTW14">(Creeping Penguins)</a></dt></h3>
+	<dd> Descrittore che prende in input una latitudine LAT, una longitudine LONG, una data DATA e una serie di categorie ammissibili come risposta, e restituisce una sequenza ordinata di luoghi da visitare durante la giornata. </dd>
+
+	<h3><dt><a name="html6.5">6.5-Descrizione</a> <a href="http://vitali.web.cs.unibo.it/TechWeb12/GruppoLTW09">(Creators)</a></dt></h3>
+	<dd>Descrittore che prende in input un id di luogo e genera una descrizione in testo (o HTML) della locazione, dell'indirizzo, degli orari, ecc.</dd>
+	
+	<h3><dt><a name="html6.6">6.6-Distanza</a></dt></h3>
+	<dd>Descrittore che prende in input due luoghi e ne calcola la distanza in metri.</dd>
+</dl>
+	<h2><a name="html7">7-Come si usa?</a></h2>
+	<p> Il progetto MetaMarket è composto principalmente da 3 importanti funzioni, che ci permettono di: filtrare, organizzare un percorso, e poter leggere
+	la descrizione di ogni posto (location) di nostro interesse. Vediamo come: <p>
+
+	<dl>
+	<h3><dt><a name="html7.1">7.1-Filtrare</dt></a></h3>
+	<dd>Filtra i luoghi, cliccando nel menu a sinistra, sulla categoria di tuo interesse, nel menù centrale vedrai tutti i locali
+	 che appartengono a quella categoria che hai appena selezionato. Sulla mappa invece, compariranno le location più vicine a te,
+	 appartenenti alla categoria selezionata.</dd>
+	
+	<h3><dt><a name="html7.2">7.2-Ottenere una descrizione</dt></a></h3>
+	<dd>Una volta selezionata la categoria, prova a cliccare nel menù centrale su una location specifica. Cosa succede?
+	Se sei troppo lontano dalla location, comparirà sulla mappa il marker e sarai catapultato (mettiti il casco!) direttamente sulla posizione
+	in cui si trova il luogo, altrimenti ti risparmiamo l'emozione, in ambo i casi la tendina sotto la mappa non l'abbiamo creata solo per coprire un brutto spazio
+	bianco, bensì all'interno di quella casella potrai leggere la descrizione della location su cui hai appena cliccato,saranno presenti vari screenshot,e se hai 
+	buona memoria ti aiuteranno ad avere dei punti di riferimento visivi in caso tu debba raggiungere il luogo.</dd>
+
+	<h3><dt><a name="html7.3">7.3-Organizza la tua giornata!</dt></a></h3>
+	<dd>Hai la giornata piena e non sai come organizzarla? Organizza al meglio le tue commissioni, seleziona le categorie che ti interessano,
+	e apri nel menù centrale, la tendina "Percorso Convenienza", quando avrai selezionato tutte le categorie di tuo gradimento, clicca
+	sull'icona al centro del menù "Proponi Giornata" e verranno calcolate le location a te più comode! Ti sei sbagliato? se vuoi eliminare
+	una categoria cliccaci 2 volte nel menù centrale, e questa sparirà. Se invece vuoi riniziare da capo, clicca sull'icona reset.
+	Sulla mappa compariranno i marker che ti indicheranno la sequenza più conveniente di viaggio.</dd>
+
+</div>
+
+<div id="footer"><a href="#" onclick="history.go(-1);return false;">Indietro</a></div>
+	
+</body>
+</html>

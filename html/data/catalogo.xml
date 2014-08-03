@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalogo SYSTEM "http://vitali.web.cs.unibo.it/twiki/pub/TechWeb12/DTDs/catalogo.dtd">
+<catalogo id="ltw1140" gruppo="OM3GA-TWG">
+	<aggregatori>
+		<aggregatore id="ltw1140-museiBO2011" title="musei di Bologna" url="http://ltw1140.web.cs.unibo.it/museiBO2011">
+			Dati riguardo i musei di Bologna città, con locazioni, indirizzi e orari di apertura.
+		</aggregatore>
+		
+		<aggregatore id="ltw1140-farmacieBO2011" title="Farmacie di Bologna" url="http://ltw1140.web.cs.unibo.it/farmacieBO2011">
+			Dai riguardo le scuole farmacie di Bologna città con locazioni, indirizzi e orari di apertura.
+		</aggregatore>
+		
+		<aggregatore id="ltw1140-scuolematerneBO2011" title="Scuole Materne di Bologna" url="http://ltw1140.web.cs.unibo.it/scuolematerneBO2011">
+			Dai riguardo le scuole materne di Bologna città con locazioni, indirizzi e orari di apertura.
+		</aggregatore>
+	
+	</aggregatori>
+	
+	<descrittori>
+		
+		<descrittore url="http://ltw1140.web.cs.unibo.it/tipologia" desc="Restituisce tutti i luoghi che rispettano la relazione tra insieme di categorie dato e operatore booleano">
+			<params>
+				<param name="list">Funzione di contorno che ritorna una lista degli elementi scelti (name, category, address ecc.) presenti in tutti gli aggregatori di tutti i gruppi. SOSTITUISCE I DUE PARAMETRI SUCCESSIVI.</param>
+				<param name="op" required="yes">L'operatore booleano (AND, OR, NOT, XOR)</param>
+				<param name="categories" required="yes">La lista di categorie separate da virgola</param>
+				
+			</params>
+		</descrittore>
+		
+		<descrittore url="http://ltw1140.web.cs.unibo.it/distanza" desc="Prende in input due coordinate geografiche e restituisce la distanza in metri calcolata in linea d'aria">
+			<params>
+				<param name="lat1" required="yes">La prima latitudine</param>
+				<param name="lat2" required="yes">La seconda latitudine</param>			
+				<param name="long1" required="yes">La prima longitudine</param>
+				<param name="long2" required="yes">La seconda longitudine</param>	
+			</params>							
+		</descrittore>
+		<descrittore url="http://ltw1140.web.cs.unibo.it/eaperto" desc="Prende in input un multiintervallo di orari e un intervallo di orari semplici,seguendo la sintassi del protocollo, e verifica se il secondo orario e contenuto nel primo rispondendo a seconda dei casi con con 'e aperto' oppure 'e chiuso'">
+			<params>
+				<param name="orario1=" required="yes">Multi intervallo di orario,che arriva dal narratore</param>
+				<param name="orario2=" required="yes">Intervallo semplice di orari</param>
+			</params>
+		</descrittore>	
+		<descrittore url ="http://ltw1140.web.cs.unibo.it/aprira" desc="Prende in input un intervallo di orari semplice e un multiintervallo di orari, secondo sintassi da protocollo, e restituisce uno dei 4 possibili stati: 0, 1, 2, 3 - Rispettivamente: chiuso, aprira, aperto, chiudera">
+			<params>
+				<param name="multi" required="yes">Multi intervallo di orari</param>
+				<param name="simple" required="yes">Intervallo semplice di orari</param>
+			</params>
+		</descrittore>
+	
+	</descrittori>
+</catalogo>
+	

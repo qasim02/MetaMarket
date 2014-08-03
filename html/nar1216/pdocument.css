@@ -1,0 +1,71 @@
+body
+{
+        /* background-image:url("http://lab.desilence.net/cinemascreen_test/gradient_red.png"); */
+		background-image: repeat-x;
+        font-family: 'helvetica,arial,sans-serif', normal;
+}
+
+/* **************************************************************************** */
+/*   								Headings									*/
+
+h1 {
+	font-size:34px;	line-height:38px;
+}
+h2 {
+	font-family:'TitilliumMedium',helvetica,arial,sans-serif;
+		color:#54534F; font-size:20pt; line-height:26pt; font-weight:normal;
+}
+h3 {
+	font-size:20px;	line-height:25px;	padding-bottom: 8px;
+}
+h4 {
+	font-family:'TitilliumMedium',helvetica,arial,sans-serif;
+		color:#666666;	font-size:12pt;	line-height:15pt;	font-weight:normal;
+		}
+}
+}
+h5 {
+	font-size:13px; margin: 0 0 10px 0; line-height: 26px;
+}
+h6 { 
+	font-size:14px; line-height:17px;
+}
+h1 a,h2 a,h3 a,h4 a,h5 a,h6 a { 
+	color:#54534F; font-family:'TitilliumMedium',arial,serif; font-size:100%;
+}
+h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover {
+	color:#1096c8; font-family:'TitilliumMedium',arial,serif; font-size:100%; text-decoration: none;
+}
+
+/* **************************************************************************** */	
+#titprog
+{
+        color:#8B0000; font-family: 'helvetica', serif;   text-align:center;
+}
+#bigdoc
+{
+        font-family: 'helvetica', serif; position:relative;  top: -80px;
+}
+#titind
+{
+        color:#8B0000;  font-family: 'helvetica', serif;
+}
+#omega
+{
+        font-family: 'helvetica', serif;   color:#8B0000; 	position:relative;   left: 360px;   top: -85px;
+}
+#immagine
+{
+        position:relative;  left: 270px;  top: 20px;
+}
+.indice
+{
+        position:relative;top:-95px;left:0px; border:1px solid black;  width:70%;
+}
+.pmeta
+{
+        margin:auto; width:85%; 
+        }
+/* **************************************************************************** */
+/* 									Footer										*/
+#footer {display:none;}

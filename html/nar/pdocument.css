@@ -1,0 +1,58 @@
+body
+{
+        background-image:url("http://lab.desilence.net/cinemascreen_test/gradient_red.png");
+	background-image: repeat-x;
+        font-family: 'Forum', cursive;
+}
+
+#titprog
+{
+        color:#8B0000;
+        font-family: 'Vollkorn', serif;
+        text-align:center;
+}
+
+#bigdoc
+{
+        font-family: 'Vollkorn', serif;
+	position:relative;
+        top: -80px;
+}
+
+#titind
+{
+        color:#8B0000;
+        font-family: 'Vollkorn', serif;
+}
+
+#omega
+{
+        font-family: 'Vollkorn', serif;
+        color:#8B0000;
+	position:relative;
+        left: 360px;
+        top: -85px;
+}
+
+#immagine
+{
+        position:relative;
+        left: 270px;
+        top: 20px;
+}
+
+.indice
+{
+        position:relative;top:-95px;left:0px;
+        border:1px solid black;
+        width:70%;
+}
+
+.pmeta
+{
+        margin:auto;
+        width:85%;
+}
+
+#footer {display:none;}
+

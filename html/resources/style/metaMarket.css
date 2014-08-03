@@ -1,0 +1,10 @@
+h1#headerTitle {
+	display: block;
+	background-color: grey;
+	font-size: 20px;
+	font-family: "Droid Sans";
+	text-align: center;
+	color: white;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}

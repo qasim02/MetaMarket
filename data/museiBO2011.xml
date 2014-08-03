@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locations SYSTEM "http://vitali.web.cs.unibo.it/twiki/pub/TechWeb12/DTDs/locations.dtd" >
+<locations>
+	<metadata>
+		<creator>Orgest Shehaj</creator>
+		<created>2012-01-10</created>
+		<version>1.0</version>
+		<source>http://www.musei-bo.it/</source>
+		<valid>2012-02-21</valid>
+		<note>Le date sono in formato: [AAAA-]MM-GG. Come da protocollo MetaMarket</note>
+	</metadata>
+	<location id="mus0001" lat="44.4959911" long="11.34788">
+		<category>museo</category>
+		<subcategory>Specializzati</subcategory>
+		<name>Museo Ebraico</name>
+		<address>Via Valdonica, 1/5, Bologna BO, Italy</address>
+		<tel>051-2911289</tel>
+		<opening showAs="orario settimanale">Mon, Tue, Wed, Thu, Fri, Sun: 0830-1930.</opening>
+		<closing showAs="festivi">01-01, 01-06, P, LA, 04-25, 05-01, 06-02, 08-15, 11-01, 12-08, 12-25, 12-26:.</closing>		
+	</location>
+	<location id="mus0002" lat="44.4949808" long="11.3434653">
+		<category>museo</category>
+		<subcategory>Artistici</subcategory>
+		<name>Museo Morandi</name>
+		<address>Palazzo d’Accursio, 6, Bologna BO, Italy</address>
+		<tel> 051/203646 – 203386 - 203403</tel>
+		<opening showAs="orario settimanale">Tue, Wed, Thu, Fri, Sat, San: 0830-1830.</opening>
+		<closing showAs="festivi">01-01, 01-06, P, LA, 04-25, 05-01, 06-02, 08-15, 11-01, 12-08, 12-25, 12-26:.</closing>		
+	</location>
+	<location id="mus0003" lat="44.497706" long="11.3532045">
+		<category>museo</category>
+		<subcategory>Artistici</subcategory>
+		<name>Pinacoteca Nazionale</name>
+		<address>Via delle Belle Arti, 56, Bologna BO, Italy</address>
+		<tel>051-4209411</tel>
+		<opening showAs="orario settimanale">Tue, Wed, Thu, Fri, Sat, San: 0830-1830.</opening>
+		<closing showAs="festivi">01-01, 01-06, P, LA, 04-25, 05-01, 06-02, 08-15, 11-01, 12-08, 12-25, 12-26:.</closing>		
+	</location>
+	<location id="mus0004" lat="44.4939532" long="11.3424297">
+		<category>museo</category>
+		<subcategory>Artistici</subcategory>
+		<name>Collezioni Comunali d'Arte</name>
+		<address>Piazza Maggiore, 6, Bologna BO, Italy</address>
+		<tel>051/203526 – 203153</tel>
+		<opening showAs="orario settimanale">Tue, Wed, Thu, Fri, Sat, San: 0830-1230 1530-193.</opening>
+		<closing showAs="festivi">01-01, 01-06, P, LA, 04-25, 05-01, 06-02, 08-15, 11-01, 12-08, 12-25, 12-26:.</closing>		
+	</location>
+	<location id="mus0005" lat="44.4929253" long="11.3435713">
+		<category>museo</category>
+		<subcategory>Archeologici</subcategory>
+		<name>Museo Civico Archeologico</name>
+		<address>Via dell’Archiginnasio, 2, Bologna BO, Italy</address>
+		<tel>051-2757211</tel>
+		<opening showAs="orario settimanale">Tue, Wed, Thu, Fri, Sat, Sun: 0830-1230 1530-193.</opening>
+		<closing showAs="festivi">01-01, 01-06, P, LA, 04-25, 05-01, 06-02, 08-15, 11-01, 12-08, 12-25, 12-26:.</closing>		
+	</location>
+	<location id="mus0006" lat="44.5220519" long="11.3314696">
+		<category>museo</category>
+		<subcategory>Tecnici</subcategory>
+		<name>Museo del Patrimonio Industriale</name>
+		<address>Fornace Galotti – Via della Beverara, 123, Bologna BO, Italy</address>
+		<tel>051/635611 – 6356602</tel>
+		<opening showAs="orario settimanale">Tue, Wed, Thu, Fri,Sat, Sun: 0830-1230 1530-193.</opening>
+		<closing showAs="festivi">01-01, 01-06, P, LA, 04-25, 05-01, 06-02, 08-15, 11-01, 12-08, 12-25, 12-26:.</closing>		
+	</location>
+	<location id="mus0007" lat="44.4961575" long="11.354165">
+		<category>museo</category>
+		<subcategory>Naturalistici</subcategory>
+		<name>Museo dell'Evoluzione</name>
+		<address>Via Selmi, 3, Bologna BO, Italy</address>
+		<tel>051-2094248</tel>
+		<opening showAs="orario settimanale">Mon, Tue, Wed, Thu, Fri, Sat, Sun: 0830-1230 1530-193.</opening>
+		<closing showAs="festivi">01-01, 01-06, P, LA, 04-25, 05-01, 06-02, 08-15, 11-01, 12-08, 12-25, 12-26:.</closing>		
+	</location>
+	<location id="mus0008" lat="44.4886479" long="11.3160252">
+		<category>museo</category>
+		<subcategory>Specializzati</subcategory>
+		<name>Museo Storico Didattico della Tappezzeria	</name>
+		<address>Via Casaglia, 3, Bologna BO, Italy</address>
+		<tel>051/6145512</tel>
+		<opening showAs="orario settimanale">Tue, Wed, Thu, Fri, Sat, Sun: 0830-1230 1530-193.</opening>
+		<closing showAs="festivi">01-01, 01-06, P, LA, 04-25, 05-01, 06-02, 08-15, 11-01, 12-08, 12-25, 12-26:.</closing>		
+	</location>
+	<location id="mus0009" lat="44.4863376" long="11.348214">
+		<category>museo</category>
+		<subcategory>Artistici</subcategory>
+		<name>Museo Tattile di Pittura Antica e Moderna</name>
+		<address>Via Castiglione, 71, Bologna BO, Italy</address>
+		<tel>051-332090</tel>
+		<opening showAs="orario settimanale">Fri, Sat: 0830-1230 1530-193.</opening>
+		<closing showAs="festivi">01-01, 01-06, P, LA, 04-25, 05-01, 06-02, 08-15, 11-01, 12-08, 12-25, 12-26:.</closing>		
+	</location>
+	<location id="mus0010" lat="44.492287" long="11.3518862">
+		<category>museo</category>
+		<subcategory>Artistici</subcategory>
+		<name>Museo Civico d'Arte industriale e Galleria Davia Bargellini</name>
+		<address>Strada Maggiore, 44, Bologna BO, Italy</address>
+		<tel>051/236708</tel>
+		<opening showAs="orario settimanale">Tue, Wed, Thu, Fri, Sat, Sun: 0830-1930.</opening>
+		<closing showAs="festivi">01-01, 01-06, P, LA, 04-25, 05-01, 06-02, 08-15, 11-01, 12-08, 12-25, 12-26:.</closing>
+	</location>
+	<location id="mus0011" lat="44.4888291" long="11.3397377">
+		<category>museo</category>
+		<subcategory>Specializzati</subcategory>
+		<name>Museo della Santa</name>
+		<address>Chiesa e Monumento del Corpus Domini - Via Tagliapietre, 21, Bologna BO, Italy</address>
+		<tel>051/331274</tel>
+		<opening showAs="orario settimanale">Tue, Thu, Sat, Sun: 0830-1830.</opening>
+		<closing showAs="festivi">01-01, 01-06, P, LA, 04-25, 05-01, 06-02, 08-15, 11-01, 12-08, 12-25, 12-26:.</closing>
+	</location>
+	<location id="mus0012" lat="44.4970799" long="11.3528749">
+		<category>museo</category>
+		<subcategory>Specializzati</subcategory>
+		<name>Museo Marsiliano</name>
+		<address>Biblioteca Universitaria - Via Zamboni, 33, Bologna BO, Italy</address>
+		<tel>051/244564-243420</tel>
+		<opening showAs="orario settimanale">Mon, Tue, Wed, Thu, Fri, Sat: 0830-1830 .</opening>
+		<closing showAs="festivi">01-01, 01-06, P, LA, 04-25, 05-01, 06-02, 08-15, 11-01, 12-08, 12-25, 12-26:.</closing>		
+	</location>
+	<location id="mus0013" lat="44.4921645" long="11.3432012">
+		<category>museo</category>
+		<subcategory>Artistici</subcategory>
+		<name>Museo di S. Petronio</name>
+		<address>Basilica di S. Petronio - Piazza Galvani, 5, Bologna BO, Italy</address>
+		<tel>051/225442</tel>
+		<opening showAs="orario settimanale">Wed, Thu, Fri, Sat, Sun: 0830-1930.</opening>
+		<closing showAs="festivi">01-01, 01-06, P, LA, 04-25, 05-01, 06-02, 08-15, 11-01, 12-08, 12-25, 12-26:.</closing>
+	</location>
+	<location id="mus0014" lat="44.4895395" long="11.3257263">
+		<category>museo</category>
+		<subcategory>Artistici</subcategory>
+		<name>Museo di S. Giuseppe</name>
+		<address>Convento di S. Giuseppe - Via Bellinzona, 6, Bologna BO, Italy</address>
+		<tel>051/6446406-3397511</tel>
+		<opening showAs="orario settimanale">Fri: 0830-1930 .</opening>
+		<closing showAs="festivi">01-01, 01-06, P, LA, 04-25, 05-01, 06-02, 08-15, 11-01, 12-08, 12-25, 12-26:.</closing>		
+	</location>
+	<location id="mus0015" lat="44.4961575" long="11.354165">
+		<category>museo</category>
+		<subcategory>Naturalistici</subcategory>
+		<name>Museo di Zoologia</name>
+		<address>Dipartimento di Biologia Evoluzionistica Sperimentale - Università di Bologna - Via Selmi, 3, Bologna BO, Italy</address>
+		<tel>051/2094248-2094140</tel>
+		<opening showAs="orario settimanale">Mon, Tue, Wed, Thu, Fri, Sat, Sun: 0800-1930.</opening>
+		<closing showAs="festivi">01-01, 01-06, P, LA, 04-25, 05-01, 06-02, 08-15, 11-01, 12-08, 12-25, 12-26:.</closing>		
+	</location>
+	<location id="mus0016" lat="44.4897269" long="11.344007">
+		<category>museo</category>
+		<subcategory>Artistici</subcategory>
+		<name>Museo di S. Domenico</name>
+		<address>Basilica di S. Domenico - Piazza S. Domenico, 13, Bologna BO, Italy</address>
+		<tel>051/6400411</tel>
+
+		<opening showAs="orario settimanale">Mon, Tue, Wed, Thu, Fri, Sat, Sun: 0900-1830 .</opening>
+		<closing showAs="festivi">01-01, 01-06, P, LA, 04-25, 05-01, 06-02, 08-15, 11-01, 12-08, 12-25, 12-26:.</closing>
+	</location>
+	<location id="mus0017" lat="44.4964617" long="11.3423094">
+		<category>museo</category>
+		<subcategory>Artistici</subcategory>
+		<name>Museo Civico Medievale</name>
+		<address>Palazzo Fava-Ghisilardi - Via Manzoni, 4, Bologna BO, Italy</address>
+		<tel>051/2193916-2193930</tel>
+		<note>Centro Commerciale Arno</note>
+		<opening showAs="orario settimanale">Mon, Tue, Wed, Thu, Fri, Sat, Sun: 0830-1200.</opening>
+		<closing showAs="festivi">01-01, 01-06, P, LA, 04-25, 05-01, 06-02, 08-15, 11-01, 12-08, 12-25, 12-26:.</closing>		
+	</location>
+	<location id="mus0018" lat="44.4896708" long="11.3576682">
+		<category>museo</category>
+		<subcategory>Specializzati</subcategory>
+		<name>Casa Carducci	</name>
+		<address>Piazza G. Carducci, 5, Bologna BO, Italy</address>
+		<tel>051/347592</tel>
+		<opening showAs="orario settimanale">Tue, Wed, Thu, Fri, Sat, Sun: 0930-1200.</opening>
+		<closing showAs="festivi">01-01, 01-06, P, LA, 04-25, 05-01, 06-02, 08-15, 11-01, 12-08, 12-25, 12-26:.</closing>
+	</location>
+	<location id="mus0019" lat="44.4921048" long="11.3484263">
+		<category>museo</category>
+		<subcategory>Artistici</subcategory>
+		<name>Museo di S. Stefano</name>
+		<address>Basilica di S. Stefano - Via Santo Stefano, 24, Bologna BO, Italy</address>
+		<tel>051/223256</tel>
+		<opening showAs="orario settimanale">Mon, Tue, Wed, Thu, Fri, Sat, Sun: 0830-1930.</opening>
+		<closing showAs="festivi">01-01, 01-06, P, LA, 04-25, 05-01, 06-02, 08-15, 11-01, 12-08, 12-25, 12-26:.</closing>
+	</location>
+	<location id="mus0020" lat="44.4963822" long="11.3529677">
+		<category>museo</category>
+		<subcategory>Specializzati</subcategory>
+		<name>Museo delle Navi e delle Antiche Carte Geografiche</name>
+		<address>Museo di Palazzo Poggi - Università degli Studi di Bologna - Via Zamboni, 33, Bologna BO, Italy</address>
+		<tel>051/2099398-2099610</tel>
+		<opening showAs="orario settimanale">Mon, Tue, Wed, Thu, Fri: 0830-1830.</opening>
+		<closing showAs="festivi">01-01, 01-06, P, LA, 04-25, 05-01, 06-02, 08-15, 11-01, 12-08, 12-25, 12-26:.</closing>
+	</location>
+	<location id="mus0021" lat="44.4963822" long="11.3529677">
+		<category>museo</category>
+		<subcategory>Scientifici</subcategory>
+		<name>Specola e Museo di Astronomia</name>
+		<address>Dipartimento di Astronomia dell'Università di Bologna - Via Zamboni, 33, Bologna BO, Italy</address>
+		<tel>051/2099360-2099610</tel>
+		<opening showAs="orario settimanale">Mon, Tue, Wed, Thu, Fri, Sat, Sun: 0800-1930.</opening>
+		<closing showAs="festivi">01-01, 01-06, P, LA, 04-25, 05-01, 06-02, 08-15, 11-01, 12-08, 12-25, 12-26:.</closing>
+	</location>
+	<location id="mus0022" lat="44.4926933" long="11.3461831">
+		<category>museo</category>
+		<subcategory>Artistici</subcategory>
+		<name>Museo di Palazzo Pepoli Campogrande</name>
+		<address>Via Castiglione, 7, Bologna BO, Italy</address>
+		<tel>051/229858-239031</tel>
+		<opening showAs="orario settimanale">Sat, Sun: 0930-2000.</opening>
+		<closing showAs="festivi">01-01, 01-06, P, LA, 04-25, 05-01, 06-02, 08-15, 11-01, 12-08, 12-25, 12-26:.</closing>		
+	</location>
+	<location id="mus0023" lat="44.480716" long="11.3425997">
+		<category>museo</category>
+		<subcategory>Scientifici</subcategory>
+		<name>Donazione Putti e Raccolta Rizzoli-Codivilla</name>
+		<address>Biblioteche Scientifiche - Istituti Ortopedici Rizzoli - Via Pupilli, 1, Bologna BO, Italy</address>
+		<tel>051/6366315</tel>
+		<note>Centro Commerciale Stadio</note>
+		<opening showAs="orario settimanale">Mon, Tue, Wed, Thu, Fri, Sat: 0800-1930.</opening>
+		<closing showAs="festivi">01-01, 01-06, P, LA, 04-25, 05-01, 06-02, 08-15, 11-01, 12-08, 12-25, 12-26:.</closing>		
+	</location>
+	<location id="mus0024" lat="44.4693047" long="11.3710528">
+		<category>museo</category>
+		<subcategory>Specializzati</subcategory>
+		<name>Museo Storico del Soldatino M. Massacesi</name>
+		<address>Villa Mazzacorati - Via Toscana, 19, Bologna BO, Italy</address>
+		<tel>051/595158-051/6149574</tel>
+		<opening showAs="orario settimanale">Mon, Tue, Wed, Thu, Fri, Sat, Sun: 0900-2130.</opening>
+		<closing showAs="festivi">01-01, 01-06, P, LA, 04-25, 05-01, 06-02, 08-15, 11-01, 12-08, 12-25, 12-26:.</closing>		
+	</location>
+	<location id="mus0025" lat="44.5162133" long="11.2690022">
+		<category>museo</category>
+		<subcategory>Specializzati</subcategory>
+		<name>Museo Ducati</name>
+		<address>Borgo Panigale - Via Cavaliere Ducati, 3, Bologna BO, Italy</address>
+		<tel>051/6413343</tel>
+		<note>Centro Commerciale De Nicola</note>
+		<opening showAs="orario settimanale">Mon, Tue, Wed, Thu, Fri, Sat: 0800-1930.</opening>
+		<closing showAs="festivi">01-01, 01-06, P, LA, 04-25, 05-01, 06-02, 08-15, 11-01, 12-08, 12-25, 12-26:.</closing>		
+	</location>
+	<location id="mus0026" lat="44.4963822" long="11.3529677">
+		<category>museo</category>
+		<subcategory>Naturalistici</subcategory>
+		<name>Museo Aldrovandi</name>
+		<address>Museo di Palazzo Poggi - Università di Bologna - Via Zamboni, 33, Bologna BO, Italy</address>
+		<tel>051/20993360</tel>
+		<opening showAs="orario settimanale">Mon, Tue, Wed, Thu, Fri, Sat, Sun: 0800-2100.</opening>
+		<closing showAs="festivi">01-01, 01-06, P, LA, 04-25, 05-01, 06-02, 08-15, 11-01, 12-08, 12-25, 12-26:.</closing>		
+	</location>
+	<location id="mus0027" lat="44.4953133" long="11.3489648">
+		<category>museo</category>
+		<subcategory>Specializzati</subcategory>
+		<name>Civico Museo Bibliografico Musicale</name>
+		<address>Piazza Rossini, 2, Bologna BO, Italy</address>
+		<tel>051/221117</tel>
+		<opening showAs="orario settimanale">Mon, Tue, Wed, Thu, Fri:0800-2000.</opening>
+		<closing showAs="festivi">01-01, 01-06, P, LA, 04-25, 05-01, 06-02, 08-15, 11-01, 12-08, 12-25, 12-26:.</closing>		
+	</location>
+	<location id="mus0028" lat="44.4933134" long="11.3443681">
+		<category>museo</category>
+		<subcategory>Specializzati</subcategory>
+		<name>Museo della Sanità e dell'Assistenza</name>
+		<address>Via Clavature, 8, Bologna BO, Italy</address>
+		<tel>051/230260 </tel>
+		<opening showAs="orario settimanale">Tue, Wed, Thu, Fri, Sat, Sun: 0800-2030.</opening>
+		<closing showAs="festivi">01-01, 01-06, P, LA, 04-25, 05-01, 06-02, 08-15, 11-01, 12-08, 12-25, 12-26:.</closing>		
+	</location>
+	<location id="mus0029" lat="44.4896708" long="11.3576682">
+		<category>museo</category>
+		<subcategory>Storici</subcategory>
+		<name>Museo Civico del Risorgimento</name>
+		<address>Piazza G. Carducci, 5, Bologna BO, Italy</address>
+		<tel>051/347592-051/343952</tel>
+		<opening showAs="orario settimanale">Tue, Wed, Thu, Fri, Sat: 0800-1900.</opening>
+		<closing showAs="festivi">01-01, 01-06, P, LA, 04-25, 05-01, 06-02, 08-15, 11-01, 12-08, 12-25, 12-26:.</closing>		
+	</location>
+	<location id="mus0030" lat="44.4941903" long="11.3465185">
+		<category>museo</category>
+		<subcategory>Naturalistici</subcategory>
+		<name>Museo Paleontologico e Geologico G. Capellini	</name>
+		<address>Dipartimento di Scienze della Terra e Geologico-Ambientali - Via Zamboni, 63, Bologna BO, Italy</address>
+		<tel>051/2094555</tel>
+		<opening showAs="orario settimanale">Mon, Tue, Wed, Thu, Fri: 0830-2000.</opening>
+		<closing showAs="festivi">01-01, 01-06, P, LA, 04-25, 05-01, 06-02, 08-15, 11-01, 12-08, 12-25, 12-26:.</closing>		
+	</location>
+	<location id="mus0031" lat="44.5249234" long="11.3500117">
+		<category>museo</category>
+		<subcategory>Specializzati</subcategory>
+		<name>Museo Apistico</name>
+		<address>Località Corticella - Istituto Nazionale di Apicultura - Via di Saliceto, 80, Bologna BO, Italy</address>
+		<tel>051/353103</tel>
+		<opening showAs="orario settimanale">Mon, Tue, Wed, Thu, Fri: 0800-1830.</opening>
+		<closing showAs="festivi">01-01, 01-06, P, LA, 04-25, 05-01, 06-02, 08-15, 11-01, 12-08, 12-25, 12-26:.</closing>		
+	</location>
+	<location id="mus0032" lat="44.4961575" long="11.354165">
+		<category>museo</category>
+		<subcategory>Comunale</subcategory>
+		<name>Museo di Antropologia	Scientifici</name>
+		<address>Dipartimento di Biologia Evoluzionistica Sperimentale - Università di Bologna - Via Selmi, 3, Bologna BO, Italy</address>
+		<tel>051/2094191-2094196</tel>
+		<opening showAs="orario settimanale">Mon, Tue, Wed, Thu, Fri: 0800-2100.</opening>
+		<closing showAs="festivi">01-01, 01-06, P, LA, 04-25, 05-01, 06-02, 08-15, 11-01, 12-08, 12-25, 12-26:0000-2400.</closing>
+	</location>
+	<location id="mus0033" lat="44.4961575" long="11.354165">
+		<category>museo</category>
+		<subcategory>Scientifici</subcategory>
+		<name>Museo di Antropologia</name>
+		<address>Dipartimento di Biologia Evoluzionistica Sperimentale - Università di Bologna - Via Selmi, 3, Bologna BO, Italy</address>
+		<tel>051/2094191-2094196</tel>
+		<note>Centro Commerciale Repubblica</note>
+		<opening showAs="orario settimanale">Mon, Tue, Wed, Thu, Fri: 0800-2100.</opening>
+		<closing showAs="festivi">01-01, 01-06, P, LA, 04-25, 05-01, 06-02, 08-15, 11-01, 12-08, 12-25, 12-26:.</closing>		
+	</location>
+	<location id="mus0034" lat="44.5006851" long="11.3201263">
+		<category>museo</category>
+		<subcategory>Specializzati</subcategory>
+		<name>Museo Mille Voci e Mille Suoni</name>
+		<address>Via Col di Lana, 7/n, Bologna BO, Italy</address>
+		<tel>051/6491008</tel>
+		<opening showAs="orario settimanale">Visitabile a richiesta.</opening>
+		<closing showAs="festivi">01-01, 01-06, P, LA, 04-25, 05-01, 06-02, 08-15, 11-01, 12-08, 12-25, 12-26:.</closing>		
+	</location>
+	<location id="mus0035" lat="44.5118549" long="11.36147">
+		<category>museo</category>
+		<subcategory>Artistici</subcategory>
+		<name>Galleria d'Arte Moderna</name>
+		<address>Piazza Costituzione, 3, Bologna BO, Italy</address>
+		<tel>051/502859</tel>
+		<opening showAs="orario settimanale">Tue, Wed, Thu, Fri, Sat, Sun: 0800-1830.</opening>
+		<closing showAs="festivi">01-01, 01-06, P, LA, 04-25, 05-01, 06-02, 08-15, 11-01, 12-08, 12-25, 12-26:.</closing>		
+	</location>
+	<location id="mus0036" lat="44.4961575" long="11.354165">
+		<category>museo</category>
+		<subcategory>Scientifici</subcategory>
+		<name>Museo di Anatomia Comparata</name>
+		<address>Dipartimento di Biologia Evoluzionistica Sperimentale - Università di Bologna - Via Selmi, 3, Bologna BO, Italy</address>
+		<tel>051/2094243 </tel>
+		<opening showAs="orario settimanale">Mon, Tue, Wed, Thu, Fri: 0830-1930.</opening>
+		<closing showAs="festivi">01-01, 01-06, P, LA, 04-25, 05-01, 06-02, 08-15, 11-01, 12-08, 12-25, 12-26:.</closing>		
+	</location>
+	<location id="mus0037" lat="44.4941903" long="11.3465185">
+		<category>museo</category>
+		<subcategory>Naturalistici</subcategory>
+		<name>Museo di Mineralogia e Petrografia L. Bombicci</name>
+		<address>Dipartimento di Scienze della Terra e Geologico-Ambientali - Università di Bologna - Piazza di Porta S. Donato, 1, Bologna BO, Italy</address>
+		<tel>051/2094926</tel>
+		<opening showAs="orario settimanale">Mon, Tue, Wed, Thu, Fri: 0830-2000.</opening>
+		<closing showAs="festivi">01-01, 01-06, P, LA, 04-25, 05-01, 06-02, 08-15, 11-01, 12-08, 12-25, 12-26:.</closing>		
+	</location>
+	<location id="mus0038" lat="44.4992584" long="11.3528619">
+		<category>museo</category>
+		<subcategory>Tecnici</subcategory>
+		<name>Museo di Fisica</name>
+		<address>Dipartimento di Fisica - Università di Bologna - Via Irnerio, 46, Bologna BO, Italy</address>
+		<tel>051/2091169</tel>
+		<note>Centro Commerciale Lame</note>
+		<opening showAs="orario settimanale">Visitabile su richiesta.</opening>
+		<closing showAs="festivi">01-01, 01-06, P, LA, 04-25, 05-01, 06-02, 08-15, 11-01, 12-08, 12-25, 12-26:.</closing>		
+	</location>
+	<location id="mus0039" lat="44.4941903" long="11.3465185">
+		<category>museo</category>
+		<subcategory>Scientifici</subcategory>
+		<name>Museo di Anatomia Patologica C. Taruffi</name>
+		<address>Istituto di Anatomia e Istologia Patologica - Policlinico S. Orsola - Via G. Massarenti, 9, Bologna BO, Italy</address>
+		<tel>051/242217</tel>
+		<opening showAs="orario settimanale">Mon, Tue, Wed, Thu, Fri, Sat: 0800-1800.</opening>
+		<closing showAs="festivi">01-01, 01-06, P, LA, 04-25, 05-01, 06-02, 08-15, 11-01, 12-08, 12-25, 12-26:.</closing>		
+	</location>
+	<location id="mus0040" lat="44.4963822" long="11.3529677">
+		<category>museo</category>
+		<subcategory>Tecnici</subcategory>
+		<name>Museo Ostetrico G. A. Galli</name>
+		<address>Museo di Palazzo Poggi - Università degli Studi di Bologna - Via Zamboni, 33, Bologna BO, Italy</address>
+		<tel>051/2099398</tel>
+		<opening showAs="orario settimanale">Mon, Tue, Wed, Thu, Fri, Sat, Sun: 0900-1930.</opening>
+		<closing showAs="festivi">01-01, 01-06, P, LA, 04-25, 05-01, 06-02, 08-15, 11-01, 12-08, 12-25, 12-26:.</closing>		
+	</location>
+	<location id="mus0041" lat="44.4963822" long="11.3529677">
+		<category>museo</category>
+		<subcategory>Tecnici</subcategory>
+		<name>Museo di Architettura Militare</name>
+		<address>Museo di Palazzo Poggi - Università di Bologna - Via Zamboni, 33, Bologna BO, Italy</address>
+		<tel>051/259021-051/259030</tel>
+
+		<opening showAs="orario settimanale">Mon, Tue, Wed, Thu, Fri: 0800-1930.</opening>
+		<closing showAs="festivi">01-01, 01-06, P, LA, 04-25, 05-01, 06-02, 08-15, 11-01, 12-08, 12-25, 12-26:.</closing>		
+	</location>
+	<location id="mus0042" lat="44.4963822" long="11.3529677">
+		<category>museo</category>
+		<subcategory>Storici</subcategory>
+		<name>Museo dello Studio del Nono Centenario</name>
+		<address>Museo di Palazzo Poggi - Università degli Studi di Bologna - Via Zamboni, 33, Bologna BO, Italy</address>
+		<tel>051/2099604</tel>
+		<opening showAs="orario settimanale">Visitabile su richiesta.</opening>
+		<closing showAs="festivi">01-01, 01-06, P, LA, 04-25, 05-01, 06-02, 08-15, 11-01, 12-08, 12-25, 12-26:.</closing>		
+	</location>
+	<location id="mus0043" lat="44.4963822" long="11.3529677">
+		<category>museo</category>
+		<subcategory>Scientifici</subcategory>
+		<name>Museo di Anatomia Umana Normale</name>
+		<address>Museo di Palazzo Poggi - Università degli Studi di Bologna - Via Zamboni, 33, Bologna BO, Italy</address>
+		<tel>051/2099610</tel>
+		<opening showAs="orario settimanale">Mon, Tue, Wed, Thu, Fri: 0800-1930.</opening>
+		<closing showAs="festivi">01-01, 01-06, P, LA, 04-25, 05-01, 06-02, 08-15, 11-01, 12-08, 12-25, 12-26:.</closing>		
+	</location>		
+</locations>
+

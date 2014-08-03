@@ -1,0 +1,55 @@
+RewriteEngine On
+
+# Redirect al catalogo
+RewriteRule ^catalogo$ /data/catalogo.xml
+
+# Redirect alla documentazione
+RewriteRule ^(help|doc|documentazione)$ /documentazione.html
+
+# Redirect alla narrazione
+RewriteRule ^$ /nar
+
+
+# Aggregatore scuolematerneBo2011.csv con controllo sui parametri
+RewriteRule ^scuolematerneBO2011/?$ /cgi-bin/aggcsv.php
+RewriteRule ^scuolematerneBO2011/(.[^/]+)/(.[^/]+)/?$    /cgi-bin/aggcsv.php?key=$1&comp=$2
+RewriteRule ^scuolematerneBO2011/(.[^/]+)/(.[^/]+)/(.[^/]+)/?$   /cgi-bin/aggcsv.php?key=$1&comp=$2&value=$3
+
+# Aggregatore museiBO2011 con controllo sui parametri della richiesta (rude ma funziona)
+RewriteRule ^museiBO2011/?$  /cgi-bin/aggxml.php?id=museiBO2011
+RewriteRule ^museiBO2011/(.[^/]+)/?$         /cgi-bin/aggxml.php?id=museiBO2011&key=$1
+RewriteRule ^museiBO2011/(.[^/]+)/(.[^/]+)/?$         /cgi-bin/aggxml.php?id=museiBO2011&key=$1&comp=$2
+RewriteRule ^museiBO2011/(.[^/]+)/(.[^/]+)/(.[^/]+)/?$        /cgi-bin/aggxml.php?id=museiBO2011&key=$1&comp=$2&value=$3
+
+
+
+# Aggregatore farmacieBO2011 con controllo sui parametri della richiesta (rude ma funziona)
+RewriteRule ^farmacieBO2011/?$ 	/cgi-bin/aggxml.php?id=farmacieBO2011
+RewriteRule ^farmacieBO2011/(.[^/]+)/?$		/cgi-bin/aggxml.php?id=farmacieBO2011&key=$1
+RewriteRule ^farmacieBO2011/(.[^/]+)/(.[^/]+)/?$	 /cgi-bin/aggxml.php?id=farmacieBO2011&key=$1&comp=$2
+RewriteRule ^farmacieBO2011/(.[^/]+)/(.[^/]+)/(.[^/]+)/?$	 /cgi-bin/aggxml.php?id=farmacieBO2011&key=$1&comp=$2&value=$3
+
+
+# Aggregatore posteBO2011
+RewriteRule ^posteBO2011/(.[^/]+)/?$		/cgi-bin/aggttl.php?key=$1
+RewriteRule ^posteBO2011/(.[^/]+)/(.[^/]+)/?$	 /cgi-bin/aggttl.php?key=$1&comp=$2
+RewriteRule ^posteBO2011/(.[^/]+)/(.[^/]+)/(.[^/]+)/?$	 /cgi-bin/aggttl.php?key=$1&comp=$2&value=$3
+
+
+
+# Descrittore tipologia
+RewriteRule ^tipologia/([^/]+)?/?params/list/([^/]+)/?$	/cgi-bin/tipologia.php?list=$2&aggId=$1
+RewriteRule ^tipologia/([^/]+)?/?params/([^/]+)/([^/]+)/?$	/cgi-bin/tipologia.php?op=$2&categories=$3&aggId=$1
+
+
+# Descrittore distanza
+RewriteRule ^distanza/params/([^/]+)/([^/]+)/([^/]+)/([^/]+)/?$	/cgi-bin/distanza.php?lat1=$1&long1=$2&lat2=$3&long2=$4
+
+
+# Descrittore eaperto
+RewriteRule ^eaperto/params/([^/]+)/([^/]+)/?$ /cgi-bin/eaperto.php?orario1=$1&orario2=$2
+
+
+# Descrittore aprira (prima orario apertura e poi orario richiesto
+RewriteRule ^aprira/params/([^/]+)/([^/]+)/?$ /cgi-bin/aprira.php?orario1=$1&orario2=$2
+

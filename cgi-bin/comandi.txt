@@ -1,0 +1,500 @@
+   13  ls
+   14  cd cgi-bin/
+   15  ls
+   16  exit
+   17  history
+   18  exit
+   19  cd ltw1140
+   20  ls
+   21  cd cgi-bin/
+   22  ls
+   23  ls -l
+   24  ls
+   25  cd ..
+   26  ls
+   27  chmod g+rwX * -R
+   28  ls
+   29  cd cgi-bin/
+   30  ls
+   31  ls -l
+   32  cd ..
+   33  ls
+   34  cd html/
+   35  ls
+   36  ls
+   37  gedit .htaccess 
+   38  bg
+   39  history
+   40  ls
+   41  cd ../..
+   42  ls
+   43  cd c
+   44  ls
+   45  cd ltw1140/cgi-bin/
+   46  ls
+   47  chmod a+x aggjson.php
+   48  mv conversioni.php config/
+   49  ls
+   50  ls -l
+   51  mv Eaperto.php eaperto.php
+   52  ls
+   53  ls -l
+   54  mv aggXML.php aggxml.php
+   55  ls -l
+   56  ls -l
+   57  mv ag.php aggcsv.php
+   58  ls
+   59  ls -l
+   60  ls
+   61  rm *~
+   62  ;s
+   63  ls
+   64  ls
+   65  exit
+   66  ls
+   67  cd ltw1140
+   68  ls
+   69  cd cgi-bin/
+   70  ls
+   71  cd config/
+   72  ls
+   73  ls -l
+   74  nano conversioni.php
+   75  chmod a+rx conversioni.php
+   76  ls
+   77  ls -l
+   78  cd aggttl/
+   79  ls
+   80  cd arc/
+   81  ls
+   82  cd ..
+   83  cd ..
+   84  ls
+   85  nano conversioni.php
+   86  nano conversioni.php
+   87  cd aggttl/
+   88  ls
+   89  cd arc/
+   90  ls
+   91  cd ..
+   92  ls
+   93  cd ..
+   94  ls
+   95  nano conversioni.php
+   96  nano conversioni.php
+   97  ls
+   98  ls
+   99  nano ttl2xml_lib.conf 
+  100  exit
+  101  cd ltw1140
+  102  ls
+  103  cd cgi-bin/
+  104  ls
+  105  cd config/
+  106  ls
+  107  ls -l
+  108  cd temp_ttl/
+  109  ls
+  110  ls -l
+  111  cd ..
+  112  ls
+  113  ls
+  114  ls -l
+  115  cd aggttl/
+  116  ls
+  117  ls -l
+  118  cd arc/
+  119  ls
+  120  ls -l
+  121  cd ../../../
+  122  ls
+  123  exit
+  124  ls
+  125  cd ltw1140
+  126  ls
+  127  cd cgi-bin/
+  128  ls
+  129  touch ciao
+  130  rm ciao 
+  131  ls
+  132  ls -l
+  133  mv XML2Json.php XML2Json.php.BAK
+  134  exit
+  135  ls
+  136  cd ltw1140
+  137  ls
+  138  cd html/nar/
+  139  ls
+  140  cd app/view/
+  141  nano Buttons.js 
+  142  cd ..
+  143  ls
+  144  cd controller/
+  145  ls
+  146  nano Location.js
+  147  cd ..
+  148  ls
+  149  cd view/
+  150  ls
+  151  nano Buttons.js 
+  152  nano Buttons.js 
+  153  fg
+  154  nano Buttons.js 
+  155  ls
+  156  cd ltw1140
+  157  ls
+  158  cd cgi-bin/
+  159  sl
+  160  ls
+  161  cd config/
+  162  ls
+  163  cd ..
+  164  ls
+  165  nano XML2Json.php
+  166  nano XML2Json.php
+  167  less XML2Json.php
+  168  ls
+  169  cd ltw1140
+  170  ls
+  171  cd cgi-bin/
+  172  ls
+  173  cd config/
+  174  ls
+  175  nano conversioni.php 
+  176  cd ..
+  177  ls
+  178  cd tipologia/
+  179  nano MMCrawler.php
+  180  ls
+  181  cd ..
+  182  ls
+  183  nano tipologia.php 
+  184  cd config/
+  185  ls
+  186  ls
+  187  clear
+  188  nano conversioni.php 
+  189   conversioni.php 
+  190  vim conversioni.php 
+  191  exit
+  192  ls
+  193  exit
+  194  exit
+  195  cd Desktop
+  196  lsk
+  197  ls
+  198  cd ..
+  199  cd lkt
+  200  cd ltw1140
+  201  ls
+  202  cd ..
+  203  ls
+  204  cd P
+  205  cd Public
+  206  ls
+  207  cd apps/
+  208  ls
+  209  chmod u+x Opera\ 10.70 
+  210  ./Opera\ 
+  211  ./Opera\ 10.70 
+  212  firefox 
+  213  man firefox
+  214  firefox -private
+  215  cd Public
+  216  ls
+  217  cd apps/
+  218  ls
+  219  ./Chromium\ 9.0.570.0 
+  220  rm 
+  221  rm Chromium\ 9.0.570.0 
+  222  rm Chromium\ 9.0.570.0 
+  223  cd ..
+  224  ls
+  225  cd ..
+  226  ls
+  227  cd Public
+  228  ls
+  229  ls -l ../Public  -d
+  230  ls -l  -d
+  231  cp apps/Geany\ 0.19.1 public/
+  232  cd public/
+  233  ls
+  234  cd ..
+  235  ls
+  236  cd ..
+  237  ls
+  238  cd Public
+  239  ls
+  240  chmod a+rx public/
+  241  chmod a+rx public/ -R
+  242  cd public/
+  243  ls
+  244  chmod a-x todo 
+  245  ls
+  246  cd ..
+  247  ls
+  248  cd ..
+  249  ls
+  250  chmod a+X Public -R
+  251  cd Public
+  252  ls
+  253  ls -l
+  254  exit
+  255  cd Public/public/
+  256  ls
+  257  ls -l
+  258  pwd
+  259  cd
+  260  ls
+  261  cd Documents/
+  262  ls
+  263  cd ..
+  264  lscd Downloads
+  265  ls
+  266  md5sum phase1*
+  267  cd Downloads
+  268  ls
+  269  mkdir so
+  270  cd so/
+  271  rm -Rf .mozilla/
+  272  exit
+  273  umps2
+  274  ls
+  275  ls
+  276  ls
+  277  vim prova.c 
+  278  gcc prova.c 
+  279  gcc prova.c 
+  280  ls
+  281  ./a.out 
+  282  ls
+  283  gcc prova.c 
+  284  gcc prova.c 
+  285  ./a.out 
+  286  ls
+  287  vim prova.c 
+  288  vim inc.h 
+  289  cd Downloads
+  290  ls
+  291  mipsel-linux-gcc p1test_pkaya_v1.0.c 
+  292  ls
+  293  mv p1test_pkaya_v1.0.c so/www.cs.unibo.it/~renzo/so/pkaya12/
+  294  cd so/www.cs.unibo.it/~renzo/so/pkaya12/
+  295  ls
+  296  rm a
+  297  rm a.out 
+  298  ls
+  299  mipsel-linux-gcc p1test_pkaya_v1.0.c 
+  300  ls
+  301  ls |less
+  302  mipsel-linux-gcc p1test_pkaya_v1.0.c |less
+  303  mipsel-linux-gcc p1test_pkaya_v1.0.c | less
+  304  mipsel-linux-gcc p1test_pkaya_v1.0.c | tail
+  305  mipsel-linux-gcc p1test_pkaya_v1.0.c | nano
+  306  mipsel-linux-gcc p1test_pkaya_v1.0.c > compile.txt
+  307  gedit compile.txt 
+  308  mipsel-linux-gcc p1test_pkaya_v1.0.c >> compile.txt
+  309  gedit compile.txt 
+  310  mipsel-linux-gcc p1test_pkaya_v1.0.c 2> compile.txt
+  311  gedit compile.txt 
+  312  ls
+  313  less list
+  314  less listx.h 
+  315  nano p1test_pkaya_v1.0.c 
+  316  gcc p1test_pkaya_v1.0.c 
+  317  ls
+  318  file p1test_pkaya_v1.0.c 
+  319  rm index.html*
+  320  y
+  321  ls
+  322  nano p1test_pkaya_v1.0.c 
+  323  file uMPStypes.h 
+  324  file *
+  325  gcc p1test_pkaya_v1.0.c 
+  326  ls
+  327  ls
+  328  ls
+  329  ls
+  330  cd ..
+  331  ls
+  332  cd ..
+  333  ls
+  334  cd ..
+  335  cd ../../../
+  336  cd
+  337  cd Public/downloads/so/
+  338  sl
+  339  ls
+  340  gcc p1test_pkaya_v1.0.c 
+  341  file *.e
+  342  gedit asl.e 
+  343  gedit pcb.e 
+  344  gcc p1test_pkaya_v1.0.c 
+  345  gcc p1test_pkaya_v1.0.c 
+  346  group
+  347  groups
+  348  cd /home/students/LABSO/2012/lso12az12/
+  349  ls
+  350  cd ..
+  351  ln -s lso12az12/ ~/Public/projects/
+  352  la
+  353  ls
+  354  cd ~
+  355  ls
+  356   cd Public/
+  357  ls
+  358  cd projects/
+  359  ls
+  360  rm boh 
+  361  ls
+  362  cd lso12az12 
+  363  rm -f lso12az12 
+  364  ln -s /home/students/LABSO/2012/lso12az12/ ./
+  365  ls
+  366  cd lso12az12
+  367  ls
+  368  ls
+  369  cd
+  370  ls
+  371  cd Public/
+  372  ls
+  373  cd projects/
+  374  ls
+  375  cd lso12az12
+  376  mkdir test
+  377  ls
+  378  cd test/
+  379  ls
+  380  vim inc.h
+  381  mkdir mchiappe
+  382  cd mchiappe/
+  383  vim inc.h
+  384  vim inc.c
+  385  vim prova.c
+  386  gcc prova.c 
+  387  vim inc.h 
+  388  vim inc.c 
+  389  gcc prova.c 
+  390  vim prova.c 
+  391  vim
+  392  vim prova.c 
+  393  terminator 
+  394  rm -Rf .mozilla/
+  395  rm -Rf .mozilla/
+  396  ping google.it
+  397  exit
+  398  ecsit
+  399  exit
+  400  ls
+  401  ln -s /home/web/mchiappe/ www
+  402  ls
+  403  cd www
+  404  ls
+  405  cd html/
+  406  ls
+  407  ls
+  408  cd ..
+  409  ls
+  410  ls -l
+  411  chmod 777 html/
+  412  ls
+  413  ls -l
+  414  chmod 755 html/
+  415  ls
+  416  cd html/
+  417  ls
+  418  pwd
+  419  cd /home/students/LABSO/2012/lso12az12/
+  420  ls
+  421  gedit p1test_pkaya_v1.0.c
+  422  ls
+  423  file *.e
+  424  cd ..
+  425  ls
+  426  ln -s /home/students/LABSO/2012/lso12az12/ ~/
+  427  cd lso12az12
+  428  ls
+  429  file *
+  430  gedit pcb.c 
+  431  bg
+  432  ls
+  433  mipsel-linux-gcc -I ./ -c pcb.c 
+  434  mipsel-linux-gcc -I ./ -c pcb.c 
+  435  mipsel-linux-gcc -I ./ -c pcb.c 
+  436  ls
+  437  mipsel-linux-gcc -I ./ -c p1test-mod.c 
+  438  ls
+  439  mipsel-linux-ld -T /usr/share/umps2/elf32ltsmip.h.umpscore.x /usr/share/umps2/crtso.S p1test-mod.o pcb.o /usr/lib/umps2/libumps.o -k KERNEL
+  440  mipsel-linux-ld -T /usr/share/umps2/elf32ltsmip.h.umpscore.x /usr/share/umps2/crtso.S p1test-mod.o pcb.o /usr/lib/umps2/libumps.o KERNEL
+  441  mipsel-linux-ld -T /usr/share/umps2/elf32ltsmip.h.umpscore.x /usr/share/umps2/crtso.S p1test-mod.o pcb.o /usr/lib/umps2/libumps.o -o KERNEL
+  442  mipsel-linux-ld -T /usr/share/umps2/elf32ltsmip.h.umpscore.x /usr/lib/umps2/crtso.o p1test-mod.o pcb.o /usr/lib/umps2/libumps.o -o KERNEL
+  443  mipsel-linux-gcc -I ./ -c pcb.c 
+  444  mipsel-linux-ld -T /usr/share/umps2/elf32ltsmip.h.umpscore.x /usr/lib/umps2/crtso.o p1test-mod.o pcb.o /usr/lib/umps2/libumps.o -o KERNEL
+  445  umps2-elf2umps KERNEL 
+  446  umps2-elf2umps -k KERNEL 
+  447  ls
+  448  umps2
+  449  bg
+  450  mipsel-linux-gcc -I ./ -c pcb.c 
+  451  mipsel-linux-ld -T /usr/share/umps2/elf32ltsmip.h.umpscore.x /usr/lib/umps2/crtso.o p1test-mod.o pcb.o /usr/lib/umps2/libumps.o -o KERNEL
+  452  umps2-elf2umps -k KERNEL 
+  453  history
+  454  nano compile.sh
+  455  chmod u+x compile.sh 
+  456  ./compile.sh 
+  457  ./compile.sh 
+  458  ./compile.sh 
+  459  ./compile.sh \
+  460  ./compile.sh \
+  461  ./compile.sh 
+  462  ./compile.sh 
+  463  ./compile.sh 
+  464  ./compile.sh 
+  465  ./compile.sh 
+  466  ./compile.sh 
+  467  ./compile.sh 
+  468  ./compile.sh 
+  469  gcc -c pcb.c 
+  470  gcc -c pcb.c -I ./
+  471  gcc -c pcb.c -I ./
+  472  gcc -c pcb.c -I ./
+  473  gcc -c pcb.c -I ./
+  474  gcc -c pcb.c -I ./
+  475  gcc -c pcb.c -I ./
+  476  gcc -c pcb.c -I ./
+  477  gcc -c pcb.c -I ./
+  478  ./compile.sh 
+  479  rm pcb.o
+  480  ./compile.sh 
+  481  ./compile.sh 
+  482  ./compile.sh 
+  483  gcc -c pcb.c -I ./
+  484  rm pcb.o
+  485  ./compile.sh 
+  486  ./compile.sh 
+  487  ./compile.sh 
+  488  ./compile.sh 
+  489  ./compile.sh 
+  490  ./compile.sh 
+  491  ./compile.sh 
+  492  ./compile.sh 
+  493  ./compile.sh 
+  494  ./compile.sh 
+  495  ./compile.sh 
+  496  ./compile.sh 
+  497  ./compile.sh 
+  498  ./compile.sh 
+  499  ./compile.sh 
+  500  ./compile.sh 
+  501  cd ltw1140
+  502  ls
+  503  chmod g+rwX * -R
+  504  chmod o+rX * -R
+  505  ls -l * -R
+  506  ls -l *.php -R
+  507  ls -l -R *.php
+  508  ls -l -R 
+  509  ls -l -R 
+  510  cd cgi-bin/
+  511  ls
+  512  history > comandi.txt

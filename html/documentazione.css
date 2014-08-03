@@ -1,0 +1,62 @@
+body
+{
+	background-image:url("http://onlyhdwallpapers.com/wallpaper/abstract_red_white_smoke_desktop_1600x1200_wallpaper-126787.jpeg");
+	background-attachment:fixed;
+	font-family: 'Forum', cursive;
+}
+
+#omega
+{	
+	font-family: 'Vollkorn', serif;
+	color:#8B0000;
+	position:fixed;
+	right:120px;
+	top: 20px;
+}
+
+#immagine
+{
+	position:fixed;
+	right: 120px;
+	top: 40px;
+}
+
+.pmeta
+{	
+	margin:auto;
+	width:50%;
+	
+}
+
+#bigdoc
+{       
+        display:none;
+}
+
+
+#titprog
+{	
+	color:#8B0000;
+	font-family: 'Vollkorn', serif;
+	text-align:center;
+}
+
+#titind
+{	
+	position:fixed;top:20px;left:0px;
+	color:#8B0000;
+	font-family: 'Vollkorn', serif;
+}
+
+.indice
+{	
+	position:fixed;top:65px;left:0px;
+	border:1px solid black;
+	width:20%;
+}
+
+
+#footer {position:fixed;right:3%;bottom:5%;}
+
+
+

@@ -1,0 +1,180 @@
+
+include_once("./config/aggttl/arc/ARC2.php"); 
+require_once("./config/ttl2xml_lib.conf");
+require_once ("./config/xml2ttl_lib.conf");
+
+//
+
+		/*%%%%%%%%%%%%%%% CONVERTITORE TURTLE => XML %%%%%%%%%%%%%%%%%*/
+
+function ttl2xml ($turtledata) {
+	echo "INIZIALIZZO LA CONVERSIONE DA TURTLE A XML \n"; // DEBUG
+	echo $turtledata; // DEBUG
+    $parser = ARC2::getTurtleParser(); //inizializza il parser
+    $parser -> parse($turtledata); // legge il dato turtle
+    $triples = $parser->getTriples(); //genera arraay di triple dal dato letto
+
+    $sogg_metadata = $triples [0]['s']; // il soggetto del primo elemento del array contiene per forza il soggetto del metadata
+    /*====crea un array contenente tutti i soggetti====*/
+
+    $prop_metacat = array ('creator', 'created', 'description', 'source', 'valid','note'); // tag metadata da cercare
+    $prop_location = array ('id', 'lat', 'long', 'category', 'name', 'address', 'tel', 'opening', 'closing'); //tag location da cercare
+
+    /*====crea un array contenente tutti i soggetti====*/
+    $array_sogg = array ();
+    foreach ($triples as $tripla) {
+        if ($tripla['s'] != $sogg_metadata) {
+            array_push ($array_sogg, $tripla['s']);
+        }
+    }
+    $array_sogg = array_unique($array_sogg);//elimina i doppioni lasciando solo un unica copia del elemento
+
+                 /*==== DOM ====*/
+
+    $doc = new DOMDocument(); //inizializza il dom
+    $doc->formatOutput = true;
+
+    $locations = $doc -> appendChild ($doc -> createElement ('locations')); //crea il tag location come figlio di doc
+    $metadata = $locations -> appendChild ($doc -> createElement ('metadata')); //crea il tag metadata come figlio di location
+                /* METADATA */
+    foreach ($triples as $tripla) { // per ogni tripla 
+        if ($sogg_metadata == $tripla['s']) { // se il soggetto del metadata prelevato in precedenza e' uguale al soggetto preso dalla tripla
+
+           foreach ($prop_metacat as $propriety) { //per ogni elemento del array prp metacat 
+                $prop = seleziona_uri ($propriety).$propriety; //genera l'uri datto alla propriety
+
+                if ( $prop == $tripla['p']) { // se propriety generato e' uguale al propriety della tripla
+                     $proprieta = $metadata -> appendChild ($doc -> createElement( $propriety )); //crea l'elemeto propiety e appendilo come figlio di metadata
+                     $proprieta -> appendChild ( $doc -> createTextNode ($tripla['o'])); //preleva il testo e appendilo come figlio di proprieta
+                }
+           }
+        }
+    }
+
+                /* LOCATION */
+    foreach ($array_sogg as $sogg) { // per ogni soggetto
+        $location = $locations -> appendChild ($doc -> createElement ('location')); // crea il tag location e appendilo al locations
+        foreach ($triples as $tripla) { // per ogni tripla
+
+            if ($sogg == $tripla['s']) { //se il soggetto e' uguale al soggetto della tripla
+
+                foreach ($prop_location as $propriety) { // per ogni propriey
+                    $propr = aggiusta_key ($propriety);  // aggiusta propriey
+                    $prop = seleziona_uri ($propr).$propr; // selezona l'uri adatto alla propriety
+
+                    if ($propriety == 'id') { // se propiety e' uguale a id 
+                        $location -> setAttribute ('id', subject ($sogg)); // metti come attributo id
+                        }
+
+                    if ($prop == $tripla['p']) { // se prop e' uguale a propriety della tripla
+
+                        if (($propriety == 'lat') || ($propriety == 'long')) { // se propriety e' uguale a lat o long 
+                            $location -> setAttribute ($propriety, $tripla['o']); //aggiungilo come attributo di location
+                        }
+
+                        else { // altrimenti crea l'elemento propriety e appendilo a location
+                            $proprieta = $location -> appendChild ($doc -> createElement ($propriety));
+                            $proprieta -> appendChild ($doc -> createTextNode ($tripla['o'])); //aggiungi l'oggetto della tripla a proprieta
+                        }
+                    }
+                }
+            }
+        }
+    }
+    echo $doc->saveXML();
+    return $doc -> saveXML(); //chiudi e salva.
+}
+
+				/*%%%%%%%%%%%%%%% CONVERTITORE XML => TURTLE %%%%%%%%%%%%%%%%%*/
+
+
+function xml2ttl ($xmldata) {
+    $data = file_get_contents($xmldata);
+    $encoded = simplexml_load_string ($data);
+    $data = json_decode((json_encode ((array) $encoded)), 1);
+
+    $triples = array(); //array finale contenente tutti gli array di triple che gli verrano caricate
+
+//scheletro array associativo da dare in pasto a turtle serializer
+    $tripla = array ('type' => 'triple', 
+                    's' => null,
+                    'p' => null,
+                    'o' => null,
+               's_type' => 'uri',
+               'p_type' => 'uri',
+               'o_type' => 'literal',
+           'o_datatype' => null,
+               'o_lang' => null,);
+
+    $prop_meta = array ('creator', 'created', 'version', 'source', 'valid','note'); // tag metadata da cercare
+    $prop_location = array ('lat', 'long', 'category', 'subcategory', 'name', 'address', 'tel', 'opening', 'closing'); //tag location da cercare
+
+    $xsd_date = 'http://www.w3.org/2001/XMLSchema#date'; //modificatore di tipo xsd:date per le date contenute in metadata
+
+//array di namespace da mettere nel file finale di turtle
+    $namespace = array(
+    'dcterms' => 'http://purl.org/dc/terms/',
+    'xsd' => 'http://www.w3.org/2001/XMLSchema#',
+    'vcard' => 'http://www.w3.org/2006/vcard/ns#',
+    'cs' => 'http://cs.unibo.it/ontology/',
+    '' => 'http://www.essepuntato.it/resource/' );
+
+//metadata
+    foreach ( $prop_meta as $prop ) {
+
+       $temp_trip = $tripla; //questa e' la variabile che contiene lo scheletro della tripla
+       $soggetto = $xmldata;//e' il soggetto che va a popolare il metadata
+       $proprieta = seleziona_uri($prop).$prop;//l' url giusto a seconda della proprieta
+       $oggetto = $data ['metadata'][$prop];    //l' oggetto della tripla
+
+       $temp_trip['s'] = $soggetto;    //assegnazione
+       $temp_trip['p'] = $proprieta;   //assegnazione
+       $temp_trip['o'] = $oggetto;     //assegnazione
+
+       if (is_date ($oggetto)) { //attivo solo nel caso in cui il soggetto e' una data, aggiunge xsd come tipo
+          $temp_trip['o_datatype'] = $xsd_date;
+       }
+       array_push ($triples, $temp_trip); //carica sul array finale le triple
+    }
+
+// location
+    for ($i = 0, $n = count ($data['location']); $i < $n; $i++) {
+
+        $temp_location = $data['location'][$i]; //variabile che contiene il primo elemento di location ovvero la prima location
+        $temp_location['opening'] = fondi_array ($temp_location['opening']); //opening => array di opening, fondo l'array cosi' non si ha problemi con la conversione
+        $temp_key = array_keys ($temp_location['@attributes']); //ricava da @attributes tutte le key e le mette in array
+
+        for ($f = 0, $m = count ($temp_location['@attributes']); $f < $m; $f++) { //per ogni elemento di attributes preleva l'elemento e lo carica in temp_loc
+            $temp_location[$temp_key[$f]] = array_shift ($temp_location['@attributes']); //temp_key[$i] = id,lat o long.. array_shift preleva elemento in testa al array
+        }
+        unset ($temp_location['@attributes']); //elimina la key @attributes perche e' vuota
+
+// creazione array di triple
+        foreach ( $prop_location as $prop ) { // per ogni elemento di prop loc
+            $temp_trip = $tripla; //crea lo scheletro della tripla 
+            $soggetto = seleziona_uri('id').$temp_location['id'];// seleziona l'uri adatta al id
+            
+            $new_prop = aggiusta_propriety($prop); //trasforma i nomi in nomi definiti in turtle
+
+            $proprieta = seleziona_uri($new_prop).$new_prop; //seleziona l'uri adatto per la proprieta
+
+            $oggetto = $temp_location[$prop]; //preleva l'oggetto
+
+            $temp_trip['s'] = $soggetto;    //assegnazione
+            $temp_trip['p'] = $proprieta;   //assegnazione
+            $temp_trip['o'] = $oggetto;     //assegnazione
+
+            array_push ($triples, $temp_trip); //carica sul array finale i dati
+        }
+    }
+
+    $serializer = ARC2::getTurtleSerializer(); //inizializza il serializzatore
+    $prefixes = array('ns' => $namespace); //prepara i namespace da mettere come prefisso
+    $serializer = ARC2::getTurtleSerializer($prefixes); //carica il serializer turtle che fara' la conversione da array associativo a turtle
+    $document = $serializer->getSerializedTriples($triples); //documento finito, convertito in turtle
+    
+    return $document;
+}
+
+		/*%%%%%%%%%%%%%%% FINE XML & TURTLE %%%%%%%%%%%%%%%%%*/
+
